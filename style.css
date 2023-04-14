@@ -1,5 +1,8 @@
-body{margin:0;
-box-sizing: border-box;
+body{box-sizing: border-box;
+    margin:auto 0;
+   
+   
+    
 }
 .body{
     width: 100%;
@@ -9,7 +12,7 @@ box-sizing: border-box;
     font-family: 'Tenor Sans', sans-serif;
     margin:0;
 }
-.header{
+.main-nav{
     box-sizing: border-box;
     width: 100%;
     background-color: #FFFFFF;
@@ -21,6 +24,7 @@ box-sizing: border-box;
     padding: 20px;
    
 }
+
 .my-image{
     margin-left: 20px;
     margin-bottom: -20px;
@@ -33,7 +37,7 @@ box-sizing: border-box;
     height: 70px;
     box-sizing: border-box;
 }
-.lists{width:414px;}
+
 ul {
     list-style: none;
     display: flex;
@@ -42,25 +46,38 @@ ul {
     margin-left: 300px;
     white-space: nowrap;
 }
+a{text-decoration: none;
+padding: 2rem;
+}
 
 li {  
-    display: inline-block;
+    display:inline-block;
     color: #4F4A7D;
-    font-size: small;
-    margin-right: 4rem;
+    font-size: small;  
 }
+a:hover{
+    color: #0087ca;
+    cursor:pointer;
+    text-decoration: underline;
+  }
 .logins {
     align-items: center;
     box-sizing: border-box;
     display: flex;
     flex: no-wrap;
-    margin-left:100px;
+    margin-left:auto;
 }
-
-.header:hover {
-    background-color: #ddd;
-    color: black;
+.button-one:hover{
+    background-color: #4F4A7D;
+    color:white;
+    cursor: pointer;
   }
+  .button-two:hover{
+    background-color: grey;
+    color:black;
+    cursor: pointer;
+  }
+
 .button-one{
     color: #4F4A7D;
     background-color: #FFFFFF;
@@ -86,24 +103,31 @@ li {
     height: 35px;
 }
  .flex-container{
-    display: flex;
     box-sizing: border-box;
+    display: flex;
+    
     width: 100%;
     overflow: hidden;
-    height:804px;
+    height: 804px;
  }  
 
 .content-box{
     box-sizing:border-box;
     background-color: #146356;
     border-style: none;
-    width: 60%;   
+    width: 70%;  
+    
+   
+    
+    
 }
 .heading{margin:auto;margin-top:100px;width:728px;
 height:224px;}
 .paragraph{margin: auto;
     width: 636px;
-    height: 144px;}
+    height: 144px;
+    
+}
 
 h1{
     color: #FFFFFF;
@@ -121,6 +145,7 @@ h1{
 p{
     color: #FFFFFF;
     font-size: 35px;
+    font-weight:100;
     text-align: center;
     max-width: 500px;
     line-height: 10px;
@@ -131,20 +156,23 @@ p{
     font-family: 'Tajawal', sans-serif;
 
 }
-.button{padding-top:150px;}
+.button{padding-top:150px;display:flex;align-self:center;}
 .button-three{
     color: #4F4A7D;
-    display: flex;
     border-radius: 10px;
     margin: auto;
     border-style: none;
     font-size: 20px;
     padding: 1rem;
+   
+    
+    
 
 }
 .my-product{
     background-color: #bfb4dc;
     width:40%;
+    height: 804px;
 
    
 
@@ -157,8 +185,9 @@ p{
     padding: 30px;
 }
 
+@media only screen and (max-width:600px){.flex-container{width:100%;display:grid;grid-gap:20px;grid-template-columns:1fr;justify-items:center;}
+.content-box{width:100%;font-size:30px;}.my-product{width:100%;}.main-nav{display:flex;flex-wrap:wrap;padding:0;} .my-image{padding:0; width:50px;height:20px;} li{font-size: xx-small;}ul{margin-left:50px;}}
 
   
-  @media only screen and (max-width: 768px) {body{background-color: green;}}
-   
+ 
 
