@@ -60,13 +60,14 @@ a:hover{
     cursor:pointer;
     text-decoration: underline;
   }
-.logins {
+.mobile-menu {
     align-items: center;
     box-sizing: border-box;
     display: flex;
     flex: no-wrap;
     margin-left:auto;
 }
+
 .button-one:hover{
     background-color: #4F4A7D;
     color:white;
